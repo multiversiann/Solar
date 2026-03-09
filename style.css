@@ -1,0 +1,160 @@
+body{
+background:black;
+color:white;
+text-align:center;
+font-family:Arial;
+overflow:hidden;
+}
+
+h1{
+color:#00d9ff;
+}
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:transparent;
+box-shadow:
+50px 80px white,
+120px 200px white,
+300px 150px white,
+450px 90px white,
+600px 300px white,
+700px 120px white,
+800px 250px white,
+900px 80px white,
+1000px 200px white,
+1100px 150px white,
+200px 350px white,
+350px 400px white,
+550px 420px white,
+750px 380px white,
+950px 450px white,
+1150px 360px white;
+animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:0.3;}
+to{opacity:1;}
+}
+
+.solar-system{
+position:relative;
+width:500px;
+height:500px;
+margin:auto;
+}
+
+.sun{
+width:60px;
+height:60px;
+background:yellow;
+border-radius:50%;
+position:absolute;
+top:220px;
+left:220px;
+}
+
+.orbit{
+position:absolute;
+border:1px solid rgba(255,255,255,0.2);
+border-radius:50%;
+animation:spin linear infinite;
+}
+
+.planet{
+width:12px;
+height:12px;
+background:white;
+border-radius:50%;
+position:absolute;
+top:-6px;
+left:50%;
+cursor:pointer;
+}
+
+.zoom{
+transform:scale(3);
+transition:0.4s;
+}
+
+.mercury{
+width:100px;
+height:100px;
+top:200px;
+left:200px;
+animation-duration:4s;
+}
+
+.venus{
+width:140px;
+height:140px;
+top:180px;
+left:180px;
+animation-duration:7s;
+}
+
+.earth{
+width:180px;
+height:180px;
+top:160px;
+left:160px;
+animation-duration:10s;
+}
+
+.mars{
+width:220px;
+height:220px;
+top:140px;
+left:140px;
+animation-duration:13s;
+}
+
+.jupiter{
+width:270px;
+height:270px;
+top:115px;
+left:115px;
+animation-duration:18s;
+}
+
+.saturn{
+width:320px;
+height:320px;
+top:90px;
+left:90px;
+animation-duration:22s;
+}
+
+.uranus{
+width:370px;
+height:370px;
+top:65px;
+left:65px;
+animation-duration:26s;
+}
+
+.neptune{
+width:420px;
+height:420px;
+top:40px;
+left:40px;
+animation-duration:30s;
+}
+
+#planet-info{
+margin-top:30px;
+font-size:18px;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+@keyframes spin{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
